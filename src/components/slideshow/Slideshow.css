@@ -1,0 +1,28 @@
+.slide-container {
+    width: 60vw;
+    height: 35h;
+    margin-left: 17%;
+    margin-top: 6%;
+    border: solid #7c8dec81 0.3vw;
+    border-radius: 3vw;
+    background-color: #ffffff;
+    color: #000000;
+    
+}
+
+.each-slide {
+    margin: 10%;
+}
+
+.relatos-slider{
+    font-size: 20px;
+    text-align: justify;
+}
+
+h4 {
+    margin-bottom: 1%;
+}
+
+h3{
+    margin-bottom: 3%;
+}
