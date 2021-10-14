@@ -6,8 +6,7 @@ margin: 0;
 padding: 0;
 font-family: sans-serif;
 background: #34495e;
-
-heigth: 20px;
+height: 20px;
 
 
 h1 {
@@ -46,7 +45,6 @@ border-radius: 10px;
 
 input:focus {
     width: 150px;
-    color: border-color: #2ecc71;
 }
 
 `
@@ -73,9 +71,6 @@ export default function Cadastro() {
                     </FormBox>
 
                 </DivCadastro>
-
-               
-
           </>
     )
 }
