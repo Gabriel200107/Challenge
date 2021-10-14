@@ -19,7 +19,7 @@ export default function Perfil() {
         font-size: 20px;
         padding: 8px 0;
         margin: 8px 0;
-        border-bottom: 1px solid #483D8B;
+        border-bottom: 2px solid #483D8B;
     }
 
     .textbox input {
