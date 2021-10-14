@@ -8,7 +8,11 @@ const DivFooter = styled.div`
     padding: 10px;
     border-top: none;
     border-right: none;
-    max-width: 100%;
+    max-width: 98.9%;
+    position:absolute;
+    bottom:0;
+    width:98.5%;
+
    
 
 
@@ -21,7 +25,7 @@ export default function Footer() {
                   <DivFooter>
                         <footer>
                               <p>zeniTI@gmail.com</p>
-                              <p>(XX) XXXXX - XXXX</p>
+                              <p>(11)9 8765-8956</p>
                               <p class="copyright">ZeniTI Coporation - 2021  - Copyright &copy;</p>
 
                         </footer>

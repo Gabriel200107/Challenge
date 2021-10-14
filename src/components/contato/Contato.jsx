@@ -6,36 +6,96 @@ import icoMail from '../img/mail.png'
 export default function Contato() {
 
         const DivContato = styled.div`
- 
- 
- 
-        
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 25vh;
+        font-family: sans-serif;
 
-    `
+        .contato{
+                padding-right: 15vw;
+
+        }
+        .formulario{
+                padding-bottom: 2vh;
+        }
+        .formulario2{
+                padding-bottom: 2vh;
+                padding-left: 2vw;
+        }
+        input{
+        width: 17vw;
+        height: 0.2vh;
+        border: 0;
+        background: none;
+        display: block;
+        text-align: center;
+        border: 2px solid #3498db;
+        padding: 20px 40px;
+        outline: none;
+        color: black;
+        transition: 0.25s;
+        border-radius: 10px;         
+        }
+        input:focus {
+        width: 16vw;
+        }
+
+        .numero{
+                display: flex;
+
+        }
+
+        .email{
+                display: flex;
+        }
+        .icon-css{
+                padding-right: 1vw;
+                width: 50px;
+                padding-bottom: 2vh;
+        }
+        h1{
+                padding-bottom: 3vh;
+        }
+
+`
         return (
 
                 <DivContato>
 
-                <div>
-                        <h4>Entre em contato conosco</h4>
                         <div className="contato">
-                                <img className="icon-css" src={icoTel} alt="Telefone" />
-                                <p>(11)9 8765-8956</p>
+                                <h1 >Entre em contato conosco</h1>
+                                <div className="numero">
+                                        <img className="icon-css" src={icoTel} alt="Telefone" />
+                                        <p>(11)9 8765-8956</p>
+                                </div>
+                                <div className="email">
+                                        <img className="icon-css" src={icoMail} alt="Carta" />
+                                        <p>zeniTI@gmail.com</p>
+                                </div>
                         </div>
-                        <div className="email">
-                                <img className="icon-css" src={icoMail} alt="Carta" />
-                                <p>ZenTI@gmail.com</p>
-                        </div>
-                </div>
+                        <div className="">
 
-                        <form className='box' action="index.html" method="post">
-                                <h1>Contato</h1>
-                                <input type="text" name="" placeholder="Nome *" />
-                                <input type="email" name="" placeholder="E-mail *" />
-                                <input type="text" name="" placeholder="Assunto" />
-                                <input type="text" name="" placeholder="Sua mensagem*" />
-                                <input type="submit" name="" value="Enviar" />
-                        </form>
+                                <form className='box' action="index.html" method="post">
+                                        <h1>Como podemos ajudar ?</h1>
+                                        <div className="formulario">
+                                                <input type="text" name="" placeholder="Nome *" />
+                                        </div>
+                                        <div className="formulario">
+                                                <input type="email" name="" placeholder="E-mail *" />
+                                        </div>
+                                        <div className="formulario">
+                                                <input type="text" name="" placeholder="Assunto" />
+                                        </div>
+                                        <div className="formulario">
+                                                <input type="text" name="" placeholder="Sua mensagem*" />
+                                        </div>
+                                        <div className="formulario2">
+                                                <input type="submit" name="" value="Enviar" />
+                                        </div>
+
+                                </form>
+                        </div>
 
 
 
