@@ -1,32 +1,38 @@
 import React from 'react'
 import styled from 'styled-components';
 
-const DivCadastro = styled.div`
+const DivCadastro = styled.div
+`
 margin: 0;
 padding: 0;
 font-family: sans-serif;
-background: #34495e;
-height: 20px;
-
 
 h1 {
-    color: white;
+    color: black;
     text-transform: uppercase;
-    font-weight: 500
+    font-weight: 500;
+    margin-bottom: 15px;
+
 }
 
 
 `
 const FormBox = styled.form `
-width: 300;
+width: 70vh;
+height: 60vh;
 padding: 40px;
 position: absolute;
 top: 50%;
 left: 50%;
-background: black;
+border-radius: 10px;
 transform: translate(-50%, -50%);
+background-color: white;
 
 text-align: center;
+
+
+input::placeholder {
+}
 
 input {
 border: 0;
@@ -34,21 +40,36 @@ background: none;
 display: block;
 margin: 20px auto;
 text-align: center;
-border: 2px solid #3498db;
-padding: 20px 40px;
-width: 200px;
+border: 1.5px solid #011329;
+padding: 2.5vh 3vh;
+width: 25vh;
 outline: none;
-color: white;
 transition: 0.25s;
 border-radius: 10px;
 }
 
+.submit {
+    cursor: pointer;
+    border: none;
+    font-size: 2vh;
+
+}
+
+.submit:hover {
+    border-bottom: solid 5px #3d9db3;
+}
+
+.campos {
+    display:flex;
+    flex-direction: row;
+}
+
+
 input:focus {
-    width: 150px;
+    width: 26vh;
 }
 
 `
-
 
 export default function Cadastro() {
 
@@ -59,15 +80,28 @@ export default function Cadastro() {
                     <FormBox className='box' action="index.html" method="post">
 
                         <h1>Cadastro</h1>
-                        <input type="text" name="" placeholder="Name *" />
-                        <input type="email" name="" placeholder="E-mail *" />
-                        <input type="email" name="" placeholder="E-mail de Recuperacao *" />
-                        <input type="password" name="" placeholder="Senha *" />
-                        <input type="password" name="" placeholder="Confirmar Senha *" />
-                        <input type="date" name="" placeholder="Data de Nascimento *" />
+                        <div className="campos">
+                            <input type="text" name="" placeholder="Name *" />
+                            <input type="email" name="" placeholder="E-mail *" />
+                        </div>
+
+                        <div className="campos" >
+                            <input type="email" name="" placeholder="E-mail de Recuperacao *" />
+                            <input type="password" name="" placeholder="Senha *" />
+                        </div>
+                        
+                        <div className="campos">
+                            <input type="password" name="" placeholder="Confirmar Senha *" />
+                            <input type="date" name="" placeholder="Data de Nascimento *" />
+                        </div>
+                       
+                       
                         <input type="text" name="" placeholder="Telefone"/>
-                        <input type="submit" name="" value="Realizar Teste Ansiedade"/>
-                        <input type="submit" name="" value="Cadastrar"/>
+                        <div className="campos">
+                            <input className="submit" type="submit" name="" value="Teste de Ansiedade"/>
+                            <input className="submit" type="submit" name="" value="Cadastrar"/>
+                        </div>
+                        
                     </FormBox>
 
                 </DivCadastro>

@@ -23,6 +23,7 @@ export default function Contato() {
                 padding-bottom: 2vh;
                 padding-left: 2vw;
         }
+
         input{
         width: 17vw;
         height: 0.2vh;
@@ -30,10 +31,10 @@ export default function Contato() {
         background: none;
         display: block;
         text-align: center;
-        border: 2px solid #3498db;
+        border: 2px solid white;
         padding: 20px 40px;
         outline: none;
-        color: black;
+        color: white;
         transition: 0.25s;
         border-radius: 10px;         
         }
@@ -41,13 +42,27 @@ export default function Contato() {
         width: 16vw;
         }
 
+        input::placeholder {
+        color:white;
+        }
+
         .numero{
                 display: flex;
+                color: white;
 
         }
+        .submit {
+                cursor: pointer;
+                border-radius: 4vh;
+                width: 8vw;
+                margin-left: 12vh;
+                
+        }
+
 
         .email{
                 display: flex;
+                color: white;
         }
         .icon-css{
                 padding-right: 1vw;
@@ -56,6 +71,7 @@ export default function Contato() {
         }
         h1{
                 padding-bottom: 3vh;
+                color: white;
         }
 
 `
@@ -90,8 +106,8 @@ export default function Contato() {
                                         <div className="formulario">
                                                 <input type="text" name="" placeholder="Sua mensagem*" />
                                         </div>
-                                        <div className="formulario2">
-                                                <input type="submit" name="" value="Enviar" />
+                                        <div>
+                                                <input className="submit" type="submit" name="" value="Enviar" />
                                         </div>
 
                                 </form>
