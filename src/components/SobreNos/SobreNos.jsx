@@ -9,7 +9,7 @@ const DivSobre = styled.div`
 
 
 h1 {
-    color: #010003;
+    color: #363636;
     font-weight: 700;
     margin-bottom: 15px;
     font-size: 25px;
@@ -20,7 +20,7 @@ h1 {
 }
 
 h2{
-    color: #010003;
+    color: #363636;
     font-weight: 500;
     margin-bottom: 15px;
     font-size: 20px;
@@ -42,7 +42,7 @@ h2{
 }
 
 
-.teste{
+.img{
     padding-left: 34vw;
 }
 
@@ -55,7 +55,7 @@ export default function SobreNos() {
         <DivSobre>
 
             <div>
-                <div className="teste">
+                <div className="img">
                     <img className="img-logo" src={logo} alt="" />
                 </div>
                 <h1 className="logo"><p>SOMOS UMA EMPRESA QUE COMBATE A ANSIEDADE</p></h1>
@@ -83,6 +83,9 @@ export default function SobreNos() {
                 <h2>Este site não oferece tratamento ou aconselhamento imediato para pessoas em crise suicida. Em caso de crise, ligue para 188 (CVV)
                     ou acesse o site <a href="#">www.cvv.org.br.</a> Em caso de emergência, procure atendimento em um hospital mais próximo.</h2>
             </div>
+            <div className='tecnica'>
+
+                </div>
         </DivSobre>
 
     )

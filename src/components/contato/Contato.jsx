@@ -38,6 +38,8 @@ export default function Contato() {
         transition: 0.25s;
         border-radius: 10px;         
         }
+
+        
         input:focus {
         width: 16vw;
         }
@@ -51,15 +53,19 @@ export default function Contato() {
                 color: white;
 
         }
+
+
         .submit {
                 cursor: pointer;
-                border-radius: 4vh;
-                width: 8vw;
+                border-radius: 1vh;
+                width: 9vw;
+                padding-bottom: 4vh;
                 margin-left: 12vh;
-                
+                color: black;
+                background-color: white;
+                font-size: 2vh;
+                font-weight: bold;       
         }
-
-
         .email{
                 display: flex;
                 color: white;
@@ -107,7 +113,7 @@ export default function Contato() {
                                                 <input type="text" name="" placeholder="Sua mensagem*" />
                                         </div>
                                         <div>
-                                                <input className="submit" type="submit" name="" value="Enviar" />
+                                                <input className="submit" type="submit" name="" value="ENVIAR" />
                                         </div>
 
                                 </form>
