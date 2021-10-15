@@ -21,28 +21,30 @@ export default function Perfil() {
 
 
 
-    const estiloIcone = { fontSize: "5em" }
+    const estiloIcone = { fontSize: "8em" }
 
     const DivPerfil = styled.div`
     
+    max-width: 98%;
     padding-top: 5vh;
     padding-bottom: 30vh;
  
     .box1 {
+    max-width: 98%;
     display: flex;
     flex-direction: row;
     background-color: #ffffff;
-    height: 45vh;
+    height: 35vh;
     margin: 1vw;
-    padding-left: 14vw;
+    padding-left: 18vw;
     font-size: 15px;
     border-radius: 2vw;
     border: solid 0.1vw black;
     }
 
     .img1 {
-    margin-top: 8vh;
-    margin-left: 5vw;
+    margin-top: 6vh;
+    margin-left: 2vw;
     margin-bottom: 3vh;
     width: 8vw;
     height: 17vh;
@@ -69,7 +71,7 @@ export default function Perfil() {
         }
     
         .divDados{
-            margin: 2vh 0 0 4vw;
+            margin: 4vh 0 0 4vw;
             font-size: 17px;
         }
 
@@ -78,12 +80,12 @@ export default function Perfil() {
         }
     
         .divAtividade{
-            margin: 12.5vh 0 0 4vw;
+            margin: 11vh 0 0 4vw;
             font-size: 17px;
         }
 
         .btnAtividade{
-            margin-left: 7vw;
+            margin-left: 4vw;
         }
 
         .lbAtividade p{
@@ -96,12 +98,12 @@ export default function Perfil() {
         }
 
         .divAgenda{
-            margin: 12.5vh 0 0 4vw;
+            margin: 11vh 0 0 4vw;
             font-size: 17px;
         }
 
         .btnAgenda{
-            margin-left: 5vw;
+            margin-left: 2vw;
         }
 
         .lbAgenda p{

@@ -43,7 +43,6 @@ box-shadow: 20px 2px 2px #00000033;
     width: 12vw;
     float: right;
     
-    
 }
 
 
@@ -54,6 +53,8 @@ export default () => {
 
         <>
 
+            
+
             <DivMenu>
                 <Link className="menu" to='/inicio'>Inicio</Link>
                 <Link className="menu" to='/atividades'>Atividades</Link>
@@ -61,8 +62,6 @@ export default () => {
                 <Link className="menu" to='/contato'>Contato</Link>
                 <Link className="menu" to='/sobreNos'>Sobre Nós</Link>
                 <Link className="menu" to='/perfil'>Perfil</Link>
-                <img className="img-logo" src={logo} alt="" />
-
             </DivMenu>
             <Switch className="menu">
                 <Route exact path="/" component={Inicio} />
